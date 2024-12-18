@@ -20,10 +20,11 @@ public class User {
     }
 
     public boolean isBirthday(){
-        if(today.getMonth() == dob.getMonth() || today.getDayOfMonth() == dob.getDayOfMonth()){
+        if(today.getMonth() == dob.getMonth() && today.getDayOfMonth() == dob.getDayOfMonth()){
            return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     public void displayHappyBirthday() {
